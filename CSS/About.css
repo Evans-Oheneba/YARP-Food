@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.top-bar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+}
+
+.top-bar .logo{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 100px;
+    padding-top: 10px;
+    color: rgb(109, 7, 7);
+}
+
+.top-bar .menu{
+    float: left;
+    display: flex;
+    align-items:center;
+    margin-left: 300px;
+
+}
+
+.top-bar .menu a{
+    position: relative;
+    text-decoration: none;
+    padding-left: 40px;
+    word-spacing: 1em;
+    color: brown;
+}
+
+.top-bar .menu li.active a::before{
+    content: '';
+    position: absolute;
+    left:53%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(139, 21, 21);
+    opacity: 1;
+    transition:all 0.3s ease;
+
+}
+
+.top-bar .menu a::before{
+    content: '';
+    position: absolute;
+    left:58%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(122, 22, 22);
+    opacity: 0;
+    transition:all 0.3s ease;
+}
+
+.top-bar li:hover a::before{
+    content: '';
+    position: absolute;
+    left:50%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(139, 21, 21);
+    opacity: 1;
+    transition:all 0.3s ease;
+    
+}
+
+.container{
+    height:410px;
+    width:100%;
+    background-image:url('../IMAGES/stashed-flour-used-cooking.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .Brand-name{
+    color:rgb(255, 255, 255);
+    text-align:left;
+    font-size: 45px;
+    padding-left:50px;
+    padding-top: 150px;
+    font-weight:1000;
+}
+
+
+.container .brand-message{
+    padding-left:50px;
+    padding-top: 5px;
+    width: 30%;
+    color: white;
+
+}
+
+.container .read{
+    margin-top: 10px;
+    margin-left:50px;
+    padding-left: 13px;
+    padding-top: 4px;
+    background-color: burlywood;
+    width: 110px;
+    align-items: center;
+    cursor: pointer;
+}
+.container .read:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
+
+
+
+.Service{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.image-box{
+    width: 42%;
+    height: 350px;
+}
+
+.Service .image-box img{
+    width: 495px;
+    height: 350px;
+}
+
+.message-box{
+    text-align: center;
+    margin-left: 30px;
+    width: 50%;
+    height: 300px;
+}
+
+.message-box h2{
+    font-size: 22px;
+    color: brown;
+
+}
+
+.message-box h2::before{
+    content: '';
+    position: absolute;
+   margin-left: 70px;
+   margin-top: 35px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color:  rgb(48, 3, 6);
+    opacity: 1;
+    transition:all 0.3s ease;
+
+}
+
+.message-box p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.Mission{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.image-box{
+    width: 42%;
+    height: 350px;
+}
+
+.Mission .image-box img{
+    width: 495px;
+    height: 350px;
+}
+
+.message-box{
+    text-align: center;
+    margin-left: 30px;
+    width: 50%;
+    height: 300px;
+}
+
+.message-box h2{
+    font-size: 22px;
+    color: brown;
+
+}
+
+.message-box h2::before{
+    content: '';
+    position: absolute;
+   margin-left: 70px;
+   margin-top: 35px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color:  rgb(48, 3, 6);
+    opacity: 1;
+    transition:all 0.3s ease;
+
+}
+
+.message-box p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.executives h2{
+    font-size: 24px;
+    font-weight: bolder;
+    color: brown;
+    padding-left: 550px;
+    padding-top:60px;
+  
+}
+
+
+.exeline{
+        float:left;
+        position: absolute;
+        width:80px;
+        height:1px;
+        background-color: burlywood;
+        margin-top:90px; 
+        margin-left: 620px;
+    }
+
+.exe-box{
+    width:100%;
+    height:400px;
+    background-color:burlywood;
+    display: inline-flex;
+}
+
+.exe{
+    float:left;
+    margin-left:10px;
+    margin-top: 40px;
+    width: 25%;
+    align-items: center;
+
+}
+
+.exe img{
+    width:250px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name{
+    padding-left:20px;
+    color:rgb(65, 11, 11);
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.pos{
+    padding-left:20px;
+    padding-top:2px;
+    color:brown;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.qual{
+    padding-left:20px;
+    padding-top:2px;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+
+    text-align: center;
+
+}
+
+.contact{
+    padding-left:30px;
+    padding-top:2px;
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+   font-weight: bolder;
+    text-align: center;
+
+}
+
+
+
+
+
+
+.Values h2{
+    font-size: 24px;
+    font-weight: bolder;
+    color: brown;
+    padding-left: 550px;
+    padding-top:60px;
+  
+}
+
+
+.exeline{
+        float:left;
+        position: absolute;
+        width:80px;
+        height:1px;
+        background-color: burlywood;
+        margin-top:90px; 
+        margin-left: 620px;
+    }
+
+.val-box{
+    width:100%;
+    height:400px;
+    background-color:burlywood;
+    display: inline-flex;
+}
+
+.group{
+    float:left;
+    margin-left:10px;
+    margin-top: 40px;
+    width: 20%;
+
+}
+
+.group .core{
+    padding-left:17px;
+    color:brown;
+    font-size: 19px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top:28px;
+    text-align: center;
+}
+
+
+.group .name{
+    padding-left:22px;
+    padding-top:25px;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.3em;
+    text-align: center;
+
+}
+
+.group .num{
+    padding-left:46px;
+    color:rgb(7, 3, 3);
+    font-size: 26px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+
+footer{
+    margin-top: 50px;
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:burlywood;
+}
+
+
+.foot-menu{
+    margin-top: 50px;
+    display: inline-flexbox;
+    width: 100%;
+    text-align: center;
+
+}
+
+.foot-menu .menu{
+    float: left;
+    width: 20%;
+  margin-left: 120px;
+
+
+
+}
+
+.foot-menu .menu .menu-head {
+    color: rgb(105, 13, 13);
+    font-weight: bolder;
+}
+.menuline{
+    float:left;
+    position: absolute;
+    width:170px;
+    height:1px;
+    background-color:var(--text-color);
+    margin-top:14px; 
+    margin-left: 50px;
+}
+
+.foot-menu .menu .menu-links{
+    margin-top: 20px;
+}
+
+.menu-links li a{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 3em;
+}
+
+footer .social-media{
+    width: 100%;
+    background-color:burlywood;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.social-media .social{
+    text-align: center;
+        font-size: 20px;
+        color:white;
+        cursor: pointer;
+        padding-right: 20px;
+
+}
+
+.foot-copyright{
+    background-color:rgb(37, 22, 2);
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 20px;
+   padding-bottom: 20px;
+}

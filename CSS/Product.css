@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.top-bar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+}
+
+.top-bar .logo{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 100px;
+    padding-top: 10px;
+    color: rgb(109, 7, 7);
+}
+
+.top-bar .menu{
+    float: left;
+    display: flex;
+    align-items:center;
+    margin-left: 300px;
+
+}
+
+.top-bar .menu a{
+    position: relative;
+    text-decoration: none;
+    padding-left: 40px;
+    word-spacing: 1em;
+    color: brown;
+}
+
+.top-bar .menu li.active a::before{
+    content: '';
+    position: absolute;
+    left:53%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(139, 21, 21);
+    opacity: 1;
+    transition:all 0.3s ease;
+
+}
+
+.top-bar .menu a::before{
+    content: '';
+    position: absolute;
+    left:58%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(122, 22, 22);
+    opacity: 0;
+    transition:all 0.3s ease;
+}
+
+.top-bar li:hover a::before{
+    content: '';
+    position: absolute;
+    left:50%;
+    margin-top: 20px;
+    transform: translateX(50%);
+    height: 6px;
+    width:6px;
+    border-radius:50%;
+    background-color: rgb(139, 21, 21);
+    opacity: 1;
+    transition:all 0.3s ease;
+    
+}
+
+.container{
+    height:410px;
+    width:100%;
+    background-image:url('../IMAGES/stashed-flour-used-cooking.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .Brand-name{
+    color:rgb(255, 255, 255);
+    text-align:left;
+    font-size: 45px;
+    padding-left:50px;
+    padding-top: 150px;
+    font-weight:1000;
+}
+
+
+.container .brand-message{
+    padding-left:50px;
+    padding-top: 5px;
+    width: 30%;
+    color: white;
+
+}
+
+.container .read{
+    margin-top: 10px;
+    margin-left:50px;
+    padding-left: 13px;
+    padding-top: 4px;
+    background-color: burlywood;
+    width: 110px;
+    align-items: center;
+    cursor: pointer;
+}
+.container .read:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
+
+
+
+.Product{
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.image-box{
+    width: 42%;
+    height: 350px;
+}
+
+.Product .image-box img{
+    width: 485px;
+    height: 330px;
+}
+
+.message-box{
+    text-align: left;
+    margin-left: 30px;
+    width: 50%;
+    height: 300px;
+}
+
+.message-box h2{
+    font-size: 22px;
+    color: brown;
+    text-transform: uppercase;
+
+}
+
+.message-box h2 a{
+    color: brown;
+
+}
+.message-box h2 a:hover{
+    color: rgb(22, 2, 2);
+
+}
+
+        
+
+.message-box p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.message-box .tabs{
+    display: inline-flex;
+}
+
+
+.Product .read{
+    margin-top: 10px;
+    margin-left:50px;
+    padding-left: 13px;
+    padding-top: 4px;
+    background-color: burlywood;
+    width: 110px;
+    align-items: center;
+    cursor: pointer;
+}
+.Product .read a{
+    color: black;
+}
+
+.Product .read a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.Product .read:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
+
+
+
+
+.Product .buy{
+    margin-top: 10px;
+    margin-left:50px;
+    padding-left: 13px;
+    padding-top: 4px;
+    background-color: burlywood;
+    width: 110px;
+    align-items: center;
+    cursor: pointer;
+}
+.Product .buy:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
+
+
+
+
+
+
+footer{
+    margin-top: 50px;
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.footer-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:burlywood;
+}
+
+
+.foot-menu{
+    margin-top: 50px;
+    display: inline-flexbox;
+    width: 100%;
+    text-align: center;
+
+}
+
+.foot-menu .menu{
+    float: left;
+    width: 20%;
+  margin-left: 120px;
+
+
+
+}
+
+.foot-menu .menu .menu-head {
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.menuline{
+    float:left;
+    position: absolute;
+    width:170px;
+    height:1px;
+    background-color:var(--text-color);
+    margin-top:14px; 
+    margin-left: 50px;
+}
+
+.foot-menu .menu .menu-links{
+    margin-top: 20px;
+}
+
+.menu-links li a{
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 3em;
+}
+
+footer .social-media{
+    width: 100%;
+    background-color:burlywood;
+    height: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.social-media .social{
+    text-align: center;
+        font-size: 20px;
+        color:white;
+        cursor: pointer;
+        padding-right: 20px;
+
+}
+
+.foot-copyright{
+    background-color:rgb(37, 22, 2);
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    padding-top: 20px;
+   padding-bottom: 20px;
+}
