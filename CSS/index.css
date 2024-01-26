@@ -92,7 +92,7 @@ body{
 .container{
     height:510px;
     width:100%;
-    background-image:url('../IMAGES/stashed-flour-used-cooking.jpg');
+    background-image:url('IMAGES/stashed-flour-used-cooking.jpg');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,6 +275,52 @@ body{
     cursor: pointer;
 }
 
+
+.Gallery{
+    height: 800px;
+
+}
+
+.Gellery .head{
+    font-size: 22px;
+    font-weight: bolder;
+    color: brown;
+    padding-left: 550px;
+    padding-top:60px;
+    text-transform: uppercase;
+
+}
+.Gallery .pic-box{
+    width: 90%;
+    display:flex;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.Gallery .pic-box2{
+    width: 90%;
+    display:flex;
+    box-sizing: border-box;
+    margin-left: 2%;
+    margin-top: 3%;
+ 
+}
+
+
+
+.pic-box .pic, .pic-box2 .pic{
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+}
+
+.pic img{
+    width: 300px;
+    height: 300px;
+
+}
 
 
 footer{

@@ -165,20 +165,7 @@ body{
 
 }
 
-.message-box h2::before{
-    content: '';
-    position: absolute;
-   margin-left: 70px;
-   margin-top: 35px;
-    transform: translateX(50%);
-    height: 6px;
-    width:6px;
-    border-radius:50%;
-    background-color:  rgb(48, 3, 6);
-    opacity: 1;
-    transition:all 0.3s ease;
 
-}
 
 .message-box p{
     margin-top: 20px;
@@ -217,20 +204,7 @@ body{
 
 }
 
-.message-box h2::before{
-    content: '';
-    position: absolute;
-   margin-left: 70px;
-   margin-top: 35px;
-    transform: translateX(50%);
-    height: 6px;
-    width:6px;
-    border-radius:50%;
-    background-color:  rgb(48, 3, 6);
-    opacity: 1;
-    transition:all 0.3s ease;
 
-}
 
 .message-box p{
     margin-top: 20px;
