@@ -92,7 +92,7 @@ body{
 .container{
     height:510px;
     width:100%;
-    background-image:url('IMAGES/stashed-flour-used-cooking.jpg');
+    background-image:url('../IMAGES/stashed-flour-used-cooking.jpg');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
