@@ -231,6 +231,19 @@ body{
 }
 
 
+.Product .buy a{
+    color: black;
+}
+
+.Product .buy a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.Product .buy:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
 
 
 

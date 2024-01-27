@@ -214,6 +214,20 @@ body{
 }
 
 
+.Product1 .buy a{
+    color: black;
+}
+
+.Product1 .buy a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.Product1 .buy:hover{
+    background-color: rgb(48, 27, 1);
+    color: white;
+    transition:all 0.3s ease;
+}
+
 
 
 footer{
